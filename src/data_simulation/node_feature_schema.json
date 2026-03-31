@@ -1,0 +1,23 @@
+{
+  "graph_schema": {
+    "node_features": {
+      "description": "Per-node traffic statistics extracted over a fixed time window",
+      "features": [
+        {"index": 0, "name": "packet_rate", "type": "float", "unit": "pkts/sec"},
+        {"index": 1, "name": "byte_rate", "type": "float", "unit": "bytes/sec"},
+        {"index": 2, "name": "unique_destinations", "type": "int", "unit": "count"},
+        {"index": 3, "name": "syn_flag_ratio", "type": "float", "unit": "percentage"},
+        {"index": 4, "name": "udp_ratio", "type": "float", "unit": "percentage"},
+        {"index": 5, "name": "avg_packet_size", "type": "float", "unit": "bytes"},
+        {"index": 6, "name": "connection_failures", "type": "int", "unit": "count"}
+      ]
+    },
+    "edge_attributes": {
+      "description": "Link-level properties between connecting IoT devices",
+      "features": [
+        {"name": "link_bandwidth", "type": "float", "unit": "Mbps"},
+        {"name": "latency_proxy", "type": "float", "unit": "ms"}
+      ]
+    }
+  }
+}
