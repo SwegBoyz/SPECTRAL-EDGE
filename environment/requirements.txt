@@ -1,0 +1,23 @@
+# SPECTRAL-EDGE: Python Environment Dependencies
+# Phase 1: Environment Setup
+
+# Core Machine Learning & Math
+torch>=2.0.0
+torchvision
+torchaudio
+numpy>=1.24.0
+pandas>=2.0.0
+scikit-learn>=1.2.2
+
+# Graph Neural Network Framework
+torch_geometric>=2.3.0
+
+# Network & Graph Analysis
+networkx>=3.0
+scapy>=2.5.0  # For traffic feature extraction
+pyshark>=0.6
+
+# Visualization & Experiment Tracking
+matplotlib>=3.7.0
+tensorboard>=2.12.0
+wandb>=0.15.0 # Weights & Biases for hyperparameter tracking
